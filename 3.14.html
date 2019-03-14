@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Graduates Message</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        #Gmessage{
+            margin-top: 30px;
+            margin-left: 45px;
+        }
+        #form{
+            margin-top: 40px;
+            margin-left: 45px;   
+        }
+        #chart1{
+            width: 800px;
+            height: 200px;
+        }
+        #chart2{
+            margin-top: 20px;
+            width: 800px;
+            height: 148px; 
+        }
+        #legend{
+            font-size: 25px;
+            color: red;
+        }
+        #input{
+            height: 25px;
+            width: 275px;
+            display: inline;
+        }
+        #input2{
+            height: 25px;
+            width: 200px;
+            display: inline;
+        }
+        #word{
+            font-size: 25px;
+            display: inline;
+        }    
+        #tip{
+            color:red;
+            display: inline;
+            font-size: 25px;
+            margin-left: 10px;
+        }
+        #upload{
+            margin-top: 15px;
+            width: 50px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="Gmessage">毕业生信息</h1>
+    <form id="form" method="GET" action="#">
+        <fieldset id="chart1">
+            <legend id="legend">
+                学生信息
+            </legend>
+            <div>
+                <p id="word">姓&nbsp;&nbsp;名：</p> <input type="text" name="name1" id="input" autofocus="autofocus" required="required" placeholder="请输入姓名" /><p id="tip">*</p>
+            </div>
+            <div>
+                <p id="word">学&nbsp;&nbsp;号：</p> <input type="number" name="name2" id="input" required="required" placeholder="请输入学号" /><p id="tip">*</p>
+            </div>
+            <div>
+                <p id="word">手&nbsp;&nbsp;机：</p> <input type="tel" name="name3" id="input" required="required" placeholder="请输入手机号" /><p id="tip">*</p>
+            </div>
+            <div>
+                <p id="word">邮&nbsp;&nbsp;箱：</p> <input type="email" name="name4" id="input" required="required" placeholder="请输入邮箱地址" /><p id="tip">*</p>
+            </div>
+        </fieldset>
+        <fieldset id="chart2">
+            <legend id="legend">
+                录取情况
+            </legend>
+            <div>
+                <p id="word">录取学校</p> <input type="text" name="name5" id="input"/>
+            </div>
+            <div>
+                <p id="word">入学成绩</p> <input type="text" name="name6" id="input"/>
+            </div>
+            <div>
+                <p id="word">入学时间</p> <input type="date" name="name7" id="input2"/>
+            </div>
+        </fieldset>
+        <input type="submit" value="提交" id="upload"/>
+    </form>
+</body>
+</html>
